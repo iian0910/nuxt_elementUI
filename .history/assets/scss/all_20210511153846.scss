@@ -1,0 +1,11 @@
+.nuxt-link {
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #87BFFF;
+  border-radius: 4px;
+  &:focus {
+    outline: none;
+  }
+}

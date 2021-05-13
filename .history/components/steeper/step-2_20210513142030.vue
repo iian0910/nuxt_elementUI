@@ -1,0 +1,29 @@
+<template>
+  <div>
+    stepper-2
+    <el-button class="step-btn" @click="next">
+      下一步
+    </el-button>
+    <el-button class="step-btn" @click="pre">
+      上一步
+    </el-button>
+  </div>
+</template>
+<script>
+export default {
+  methods: {
+    next () {
+      this.$emit('next')
+    },
+    pre () {
+      this.$emit('pre')
+    }
+  }
+}
+</script>
+<style lang="scss">
+.step-btn {
+  margin: 12px auto 0 auto;
+  display:block;
+}
+</style>
